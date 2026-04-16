@@ -91,7 +91,7 @@ What I Learned
 - Documentation is a skill – Writing about technical work clearly is just as important as the code itself
 
 Repository
-[Link to this GitHub repository]
+[[Link to this GitHub repository]](https://github.com/AmantleMagotho/First-web-development-project---Amantle-Magotho)
 
 Author: 
 Amantle Magotho
