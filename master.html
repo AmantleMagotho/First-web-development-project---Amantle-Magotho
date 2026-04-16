@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        h1{
+            font-size: 25px;
+        }
+        article{
+            clear: both;
+        }
+        /*.container{
+            width: 80%;
+            margin: 80px auto;
+            display: flex;
+        }
+        .container .trailer-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 10px;
+        }
+        .container .trailer-container .trailer{
+            height: 250px;
+            width: 350px;
+            border: solid 5px #fff;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .container .trailer-container .trailer video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s linear;
+        }
+        .container .trailer-container .trailer:hover video{
+            transform: scale(1.1);
+        }
+        .container .popup-video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.8);
+            height: 100%;
+            width: 100%;
+            display: none;
+        }
+        .container .popup-video video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 750px;
+            border-radius: 5px;
+            border: 3px solid #fff;
+            object-fit: cover;
+        }
+        .container .popup-video span{
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            font-size: 50px;
+            color: #fff;
+            font-weight: bolder;
+            z-index: 100;
+            cursor: pointer;
+        }
+        @media (max-width:768px){
+            .container .popup-video{
+                width: 80%;
+            }
+        }*/
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <a href="master.html"><img src="images/logo.png" alt="logo" height="50px"></a>
+            <h2>Home of Entertainment</h2>
+        </div>
+        <nav>
+            <ul>
+                <li id="current"><i  class="bi bi-house"><span> </span></i><a href="#">Home</a></li>
+                <li><i class="bi bi-film"><span></span></i> <a href="Movies.html">Movies</a></li>
+                <li><i class="bi bi-tv"><span></span></i> <a href="tvshows.html">TV Shows</a></li>
+                <li><i class="bi bi-controller"> <span></span></i><a href="videogames.html">Video Games</a></li>
+                <li><i class="bi bi-info-circle"><span> </span></i><a href="aboutus.html">About us</a></li>
+                <li><i class="bi bi-info-circle"><span> </span></i><a href="feedback.html">Feedback</a></li>
+            </ul>
+        
+        <div class="user">
+            <i class="bi bi-circle-half" title="Change theme"></i>
+            <i class="bi bi-globe" title="Language"></i>
+            <i id="search" class="bi bi-search" title="Search"></i>
+            <!--<input type="text" placeholder="Search...">-->
+            <i class=searchicon></i>
+        </div>
+        </nav>
+    </header>
+    <!--<div class="container">
+        <h1>Upcoming movies</h1>
+        <div class="trailer-container">
+            <div class="trailer"><video src="videos/the-flash-trailer-2_h1080p.mov" muted></video></div>
+            <div class="trailer"><video src="videos/barbie-trailer-2_h1080p.mov" muted></video></div>
+            <div class="trailer"><video src="videos/blue-beetle-trailer-1_h1080p.mov" muted></video></div>
+            <div class="trailer"><video src="videos/dune-part-2-trailer-1_h1080p.mov" muted></video></div>
+            <div class="trailer"><video src="videos/beautiful-disaster-trailer-1_h1080p.mov" muted></video></div>
+            <div class="trailer"><video src="videos/meg-2-the-trench-trailer-1_h1080p.mov" muted></video></div>
+        </div>
+    
+
+        <div class="popup-video">
+            <span>&times;</span>
+            <video src="videos/the-flash-trailer-2_h1080p.mov" muted autoplay controls></video>
+        </div>
+    </div>
+
+    <script>
+
+        document.querySelectorAll('.trailer-container video').forEach(vid => {
+            vid.onclick = () =>{
+                document.querySelector('.popup-video') .style.display = "block";
+                document.querySelector('.popup-video video').src = vid.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-video span') .onclick = () =>{
+            document.querySelector('.popup-video') .style.display = "none";
+        }
+
+    </script> -->
+
+    <!--<div class="about">
+    <div class="info">
+        <div class="subtitle">
+            <h4>Blue Beetle</h4>
+            <p>Action<span>/</span>Adventure</p>
+            <p>Release date: August 18, 2023</p>
+        </div>
+        <div class="buttons">
+            <button><i class="bi bi-play-fill"></i></button>
+            <button><i class="bi bi-cloud-arrow-down-fill"></i></button>
+        </div>
+        <p>After dominating the boxing world, Adonis Creed (Michael B. Jordan) has been thriving in both his career and family life. When childhood friend and former boxing prodigy Damian (Jonathan Majors) resurfaces after serving a long sentence in prison, he is eager to prove that he deserves his shot in the ring.</p>  
+        
+        <h2 style="font-family: serif;">Starring </h2>
+        <div class="cast">
+            <img src="images/Movies/Creed/cast/Sylvester Stallone.jpg" alt="Sylvester Stallone" title="Sylvester Stallone">
+            <img src="images/Movies/Creed/cast/Michael B Jordan.jpg" alt="Michael B Jordan" title="Michael B Jordan">
+            <img src="images/Movies/Creed/cast/Phylicia-Rashad.jpg" alt="Phylicia-Rashad" title="Phylicia-Rashad">
+            <img src="images/Movies/Creed/cast/Tessa Thompson.jpg" alt="Tessa Thompson" title="Tessa Thompson">
+            <img src="images/Movies/Creed/cast/Wood Harris.jpg" alt="Wood Harris" title="Wood Harris">
+        </div>
+        </div>
+        
+        <div class="poster">
+            <img src="images/Movies/upcoming/blue beetle.jpg" alt="Blue beetle" title="Blue beetle" width="100%" height="100%">
+        </div>
+    </div>-->
+
+    <article>
+        <div class="upcoming">
+        <h1>Upcoming movies</h1>
+        <div class="cards">
+            <div class="card">
+                <a href="barbie.html">
+                <img src="images/Movies/upcoming/barbie.jpeg" alt="Barbie" title="Barbie" width="100%" height="100%">
+                <div class="content">
+                    <h4>Barbie</h4>
+                    <p>Comedy<span>/</span>Fantasy <span>/</span>Adventure</p>
+                    <p>Release date: July 20, 2023</p>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <img src="images/Movies/upcoming/blue beetle.jpg" alt="Blue beetle" title="Blue beetle" width="100%" height="100%">
+                <div class="content">
+                    <h4>Blue Beetle</h4>
+                    <p>Action<span>/</span>Adventure</p>
+                    <p>Release date: August 18, 2023</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Movies/upcoming/meg 2 the trench.jpeg" alt="Meg 2, The Trench" title="Meg 2, The Trench" width="100%" height="100%">
+                <div class="content">
+                    <h4>Meg 2 The Trench</h4>
+                    <p>Adventure</p>
+                    <p>Release date: August 4, 2023</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Movies/upcoming/godzilla.jpg" alt="Godzilla" title="Godzilla" width="100%" height="100%">
+                <div class="content">
+                    <h4>Godzilla</h4>
+                    <p>Fantasy<span>/</span>Adventure</p>
+                    <p>Release date: <br> March 15, 2024</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Movies/upcoming/the nun.jpg" alt="The Nun" title="The Nun" width="100%" height="100%">
+                <div class="content">
+                    <h4>The Nun</h4>
+                    <p>Horror<span>/</span>Thriller</p>
+                    <p>Release date: <br> September 8, 2023</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Movies/upcoming/the flash.jpg" alt="The Flash" title="The Flash" width="100%" height="100%">
+                <div class="content">
+                    <h4>The Flash</h4>
+                    <p>Action<span>/</span>Adventure</p>
+                    <p>Release date: <br> June 16, 2023</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </article>
+
+            <h1>Latest Releases</h1>
+            <div class="cards">    
+                <div class="card">
+                    <img src="images/Movies/Latest Releases/A Cinderella Story.jpg" alt="A Cinderella Story" title="A Cinderella Story" width="100%" height="100%">
+                </div>
+                <div class="card">
+                    <img src="images/Movies/Latest Releases/Bill and Ted_Face the Music.jpg" alt="Bill and Ted_Face the Music" title="Bill and Ted_Face the Music" width="100%" height="100%">
+                </div>
+                <div class="card">
+                    <img src="images/Movies/Latest Releases/Judas And The Black Messiah.png" alt="Judas And The Black Messiah" title="Judas And The Black Messiah" width="100%" height="100%">
+                </div>
+                <div class="card">
+                    <img src="images/Movies/Latest Releases/Scooby Doo_The Sword And The Scoob.jpg" alt="Scooby Doo_The Sword And The Scoob" title="Scooby Doo_The Sword And The Scoob" width="100%" height="100%">
+                </div>
+                <div class="card">
+                    <img src="images/Movies/Latest Releases/Shazam, Fury Of The Gods.jpg" alt="Shazam, Fury Of The Gods" title="Shazam, Fury Of The Gods" width="100%" height="100%">
+                </div>
+                <div class="card">
+                    <img src="images/Movies/Latest Releases/Tom & Jerry.png" alt="Tom & Jerry" title="Tom & Jerry" width="100%" height="100%">
+                </div>
+                <div class="card">
+                    <img src="images/Movies/Latest Releases/Toys of Terror.jpg" alt="Toys of Terror" title="Toys of Terror" width="100%" height="100%">
+                </div>
+            </div> 
+            
+    <footer>
+        <!--<div class="quicklink">
+            <li><a href="movies.html"></a></li>
+            <li><a href="Creed.html"></a></li>
+        </div>-->
+        <p>Copyright &copy; 2023, All rights reserved</p>
+        <div class="socialmedia">
+            <a href="www.facebook.com/warnerbros"><img src="images/socialmedia/facebook.png" alt="Facebook"></video></a>
+            <a href="www.twitter.com/warnerbros"><img src="images/socialmedia/twitter.png" alt="Twitter"></a>
+            <a href="www.youtube.com/warnerbros"><img src="images/socialmedia/youtube.png" alt="Youtube"></a>
+            <a href="www.gmail.com"><img src="images/socialmedia/gmail.png" alt="Email"></a>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
